@@ -7,10 +7,11 @@
 	background-size: 20%, 30%;
 	height: $global-height-screen;
 	overflow: hidden;
-	padding-top: 70px;
+	padding-top: 130px;
 	position: relative;
 	z-index: 2;
 	@media only screen and (max-width: $screen-phone) {
+		padding-top: 70px;
 		background-position: 50% 55%, 50% 80%;
 		background-size: 40%, 60%;
 		&:after,
@@ -42,5 +43,5 @@
 
 .info:before {
 	animation: bgslide-rew 55s infinite linear;
-	// transform: rotate(180deg);
+	transform: rotate(180deg);
 }
