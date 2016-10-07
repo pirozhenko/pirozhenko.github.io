@@ -1,7 +1,7 @@
 .info {
 	background-color: rgba(230,230,230, .7);
-	background-image: url(../../../dist/assets/img/avka.jpg),
-										url(../../../dist/assets/img/platform.svg);
+	background-image: url(../../../assets/img/avka.jpg),
+										url(../../../assets/img/platform.svg);
 	background-position: 50% 50%, 50% 85%;
 	background-repeat: no-repeat;
 	background-size: 20%, 30%;
@@ -16,10 +16,10 @@
 .info:after,
 .info:before {
 	animation: bgslide 40s infinite linear;
-	background-image: url(../../../dist/assets/img/html-5.svg),
-										url(../../../dist/assets/img/js-5.svg),
-										url(../../../dist/assets/img/css-3.svg),
-										url(../../../dist/assets/img/angular.svg);
+	background-image: url(../../../assets/img/html-5.svg),
+										url(../../../assets/img/js-5.svg),
+										url(../../../assets/img/css-3.svg),
+										url(../../../assets/img/angular.svg);
 	background-position: 50% 0vw, 30% 50%, 50% $global-size, 70% 50%;
 	background-repeat: no-repeat;
 	background-size: 10%;
