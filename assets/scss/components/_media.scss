@@ -1,9 +1,12 @@
-@media only screen and (max-width: 40em) {
-	.info:after,
-	.info:before {
-		display: none;
-	}
-	.about {
-		height: $global-size;
-	}
-}
+// @media only screen and (max-width: 640px) {
+// 	.info:after,
+// 	.info:before {
+// 		display: none;
+// 	}
+// 	.about {
+// 		height: $global-size;
+// 	}
+// }
+@media only screen and (max-width: 1024px) { }
+@media only screen and (max-width: 1440px) { }
+@media only screen and (max-width: 1920px) { }

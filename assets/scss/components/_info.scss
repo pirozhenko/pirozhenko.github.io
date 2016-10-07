@@ -7,9 +7,17 @@
 	background-size: 20%, 30%;
 	height: $global-height-screen;
 	overflow: hidden;
-	padding-top: 120px;
+	padding-top: 70px;
 	position: relative;
 	z-index: 2;
+	@media only screen and (max-width: $screen-phone) {
+		background-position: 50% 55%, 50% 80%;
+		background-size: 40%, 60%;
+		&:after,
+		&:before {
+			display: none;
+		}
+	}
 
 }
 

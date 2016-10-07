@@ -10,10 +10,19 @@
 	height: $global-height-screen;
 	overflow: hidden;
 	padding-top: 120px;
+	@media only screen and (max-width: $screen-phone) {
+		background-size: 40%;
+		height: auto;
+		padding-bottom: 20px;
+	}
 }
 .work-portfolio {
 	height: auto;
 	padding-bottom: 100px;
+}
+.work__block,
+.work-portfolio__block {
+	margin-left: 0;
 }
 
 .work__block-item,

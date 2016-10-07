@@ -6,6 +6,11 @@
 	position: relative;
 	width: $global-size;
 	z-index: 10;
+	@media only screen and (max-width: $screen-phone) {
+		padding-top: 70px;
+		height: auto;
+		padding-bottom: 50px;
+	}
 
 	&:after,
 	&:before {
@@ -69,4 +74,8 @@
 	font-size: 2.5rem;
 	margin-left: 2rem;
 	padding-right: 2rem;
+	@media only screen and (max-width: $screen-phone) {
+		font-size: 1.2rem;
+		margin-left: 1rem;
+	}
 }
