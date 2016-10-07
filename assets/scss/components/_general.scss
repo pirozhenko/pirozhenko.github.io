@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background-image: url(../../../dist/assets/img/img-5.svg);
+	background-repeat: no-repeat;
+	background-position: 90% $global-size;
+	background-size: 40%;
+	animation: bodyslide 90s infinite linear;
+}

@@ -1,0 +1,13 @@
+.arrow {
+	bottom: $arrow-pos;
+	color: $global-black;
+	font-size: 3rem;
+	opacity: 0;
+	position: fixed;
+	right: $arrow-pos;
+	text-decoration: none;
+	z-index: 100;
+}
+.arrow.--active {
+	opacity: 1;
+}

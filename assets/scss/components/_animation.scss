@@ -1,0 +1,22 @@
+@keyframes bodyslide {
+	0% {background-position: 90% -500%;}
+	100% {background-position: 0 2000%;}
+}
+
+@keyframes bgslide {
+	0% {transform: rotate(0deg)}
+	100% {transform: rotate(360deg)}
+}
+
+@keyframes bgslide-rew {
+	0% {transform: rotate(180deg)}
+	100% {transform: rotate(-180deg)}
+}
+
+@keyframes slide-work {
+	0% {background-position: 10% 0, 90% 0; }
+	25% {background-position: 90% 90%, 10% 90% }
+	50% {background-position: 10% 90%, 90% 90% }
+	75% {background-position: 90% 0, 10% 0 }
+	100% {background-position: 10% 0, 90% 0}
+}

@@ -1,0 +1,9 @@
+.footer {
+	background: $global-black;
+	padding: 20px 0 0;
+	width: $global-size;
+}
+.footer__info {
+	float: left;
+	line-height: $header-line-height;
+}
