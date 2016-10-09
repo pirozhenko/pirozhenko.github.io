@@ -5,15 +5,27 @@
 	position: fixed;
 	width: $global-size;
 	z-index: 100;
+	overflow: hidden;
+
+	&__logo {
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-right: 3rem;
+	}
 }
 
-
-.header__logo {
-	background: url(../../../dist/assets/img/logo.jpg) no-repeat 50%;
-	background-size: cover;
-	float: left;
-	height: $header-line-height;
-	width: 130px;
+.-logo:before {
+	position: absolute;
+	text-decoration: none;
+	top: 50%;
+	transform: translateY(10px);
+	font-size: 3rem;
+	color: $global-white;
+	@media only screen and (max-width: $screen-phone) {
+			font-size: 2rem;
+			left: 10px;
+		}
 }
 
 .header__social-item,
@@ -32,16 +44,18 @@
 .footer__social-link,
 .footer__nav-link {
 	color: $global-white;
-	font-size: 1.5rem;
-	margin-right: 1.5rem;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	margin-right: 1.1rem;
 	text-decoration: none;
 	&:hover {
 		color: $global-grey;
 	}
 	@media only screen and (max-width: $screen-phone) {
-		font-size: 1rem;
+		font-size: .8rem;
 	}
 }
+
 .header__nav-link.--active,
 .footer__nav-link.--active {
 	border-bottom: 1px solid $color-hover-li;

@@ -41,6 +41,11 @@
       content: $icon-linkedin;
     }
   }
+  &.-logo {
+    &:before {
+      content: $icon-logo;
+    }
+  }
   &.-mail {
     &:before {
       content: $icon-mail;
@@ -49,6 +54,11 @@
   &.-mobile {
     &:before {
       content: $icon-mobile;
+    }
+  }
+  &.-skype {
+    &:before {
+      content: $icon-skype;
     }
   }
   &.-vk {

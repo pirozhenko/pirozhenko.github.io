@@ -1,88 +1,71 @@
 .work,
 .work-portfolio {
-	animation: slide-work 55s infinite linear;
-	background-color: rgba(200,200,200, .7);
-	background-image: url(../../../dist/assets/img/img-1.svg),
-										url(../../../dist/assets/img/img-5.svg);
-	background-position: 10% 0, 90% 0;
-	background-repeat: no-repeat;
-	background-size: 10%;
-	height: $global-height-screen;
-	overflow: hidden;
-	padding-top: 120px;
-	@media only screen and (max-width: $screen-phone) {
-		background-size: 40%;
-		height: auto;
-		padding-bottom: 20px;
-	}
+  background-color: rgba(200,200,200, .7);
+  height: $global-height-screen;
+  overflow: hidden;
+  padding-top: 100px;
+  &__title {
+    text-transform: capitalize;
+  }
+  @media only screen and (max-width: $screen-phone) {
+    height: auto;
+    padding-bottom: 20px;
+  }
 }
 .work-portfolio {
-	height: auto;
-	padding-bottom: 100px;
+  height: auto;
+  padding-bottom: 70px;
 }
 .work__block,
 .work-portfolio__block {
-	margin-left: 0;
+  margin-left: 0;
 }
 
 .work__block-item,
 .work-portfolio__block-item {
-	border-radius: 5px;
-	border: 1px solid $global-black;
-	list-style: none;
-	margin-bottom: 20px;
-	opacity: 0;
-	padding: 5px;
-	&:hover {
-		.work__block-link,
-		.work-portfolio__block-link {
-			transform: scale(1.1);
-		}
-	}
-}
-
-.work-portfolio__block-item,
-.work__block-item.--active {
-	opacity: 1;
+  border-radius: 5px;
+  border: 1px solid ($global-grey - 50%);
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 5px;
+  text-transform: capitalize;
 }
 
 .work__block-link,
 .work-portfolio__block-link {
-	display: block;
-	height: 300px;
-	width: $global-size;
-	border-radius: 5px;
-	border: 1px solid $global-grey;
-	background-position: 50%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	transition: all .2s linear;
+  display: block;
+  height: 300px;
+  width: $global-size;
+  border-radius: 5px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .first-link {
-	background-image: url(../../../dist/assets/img/diagrams.png);
+  background-image: url(../../../dist/assets/img/diagrams.png);
 }
 .second-link {
-	background-image: url(../../../dist/assets/img/form-2.png);
+  background-image: url(../../../dist/assets/img/form-2.png);
 }
 .third-link {
-	background-image: url(../../../dist/assets/img/phonecat.png);
+  background-image: url(../../../dist/assets/img/phonecat.png);
 }
 .fourth-link {
-	background-image: url(../../../dist/assets/img/kit.png);
+  background-image: url(../../../dist/assets/img/kit.png);
 }
 .fiveth-link {
-	background-image: url(../../../dist/assets/img/math-2.png);
+  background-image: url(../../../dist/assets/img/math-2.png);
 }
 .sixth-link {
-	background-image: url(../../../dist/assets/img/liga.png);
+  background-image: url(../../../dist/assets/img/liga.png);
 }
 .seven-link {
-	background-image: url(../../../dist/assets/img/astound-2.png);
+  background-image: url(../../../dist/assets/img/astound-2.png);
 }
 .eight-link {
-	background-image: url(../../../dist/assets/img/dash.png);
+  background-image: url(../../../dist/assets/img/dash.png);
 }
 .nine-link {
-	background-image: url(../../../dist/assets/img/alternate.png);
+  background-image: url(../../../dist/assets/img/alternate.png);
 }

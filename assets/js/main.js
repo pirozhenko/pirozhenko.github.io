@@ -28,13 +28,13 @@ var app = {
 
             window.onscroll = function () {
                 if(window.scrollY > 1100) {
-                    app.settings.workOne.removeClass('animated fadeOutLeft').addClass('animated fadeInLeft --active');
-                    app.settings.workTwo.removeClass('animated fadeOutUp').addClass('animated fadeInUp --active');
-                    app.settings.workThird.removeClass('animated fadeOutRight').addClass('animated fadeInRight --active');
+                    app.settings.workOne.removeClass('animated fadeOutLeft').addClass('animated fadeInLeft');
+                    app.settings.workTwo.removeClass('animated fadeOutUp').addClass('animated fadeInUp');
+                    app.settings.workThird.removeClass('animated fadeOutRight').addClass('animated fadeInRight');
                 } else if (window.scrollY < 1100) {
                     app.settings.workOne.removeClass('animated fadeInLeft').addClass('animated fadeOutLeft');
-                    app.settings.workTwo.removeClass('animated fadeInUp --active').addClass('animated fadeOutUp');
-                    app.settings.workThird.removeClass('animated fadeInRight --active').addClass('animated fadeOutRight');
+                    app.settings.workTwo.removeClass('animated fadeInUp').addClass('animated fadeOutUp');
+                    app.settings.workThird.removeClass('animated fadeInRight').addClass('animated fadeOutRight');
                 }
 
                 if(window.scrollY > 250) {
