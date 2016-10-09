@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myDiagramm">
+<head>
+	<meta charset="UTF-8">
+	<title>diagrams</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body ng-controller="LineCtrl">
+
+		<div class="container">
+			<div class="row">
+			<a href="../../index.html" class="btn btn-primary">back</a>
+				<canvas id="line" class="chart chart-line" chart-data="data"
+					chart-labels="labels" chart-series="series" chart-options="options"
+					chart-dataset-override="datasetOverride" chart-click="onClick"
+				</canvas>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<button class="btn btn-primary" ng-click="show()">show form add</button> <br>
+					<hr>
+					<form name="formAdd" ng-show="showHide" class="form-group">
+						<div class="row">
+							<div class="col-md-4">
+								<label>
+						       first value:
+						       <input class="form-control" type="text" name="firstValue" ng-model="coordX"  placeholder="enter value one" ng-required="true" ng-pattern="regexp">
+								</label>
+							</div>
+							<div class="col-md-4">
+								<label>
+						       second value:
+						       <input class="form-control" type="text" name="label" ng-model="newLabel" placeholder="enter your label" ng-required="true">
+								</label>
+							</div>
+							<hr>
+						
+							<div class="col-md-12">
+								<button class="btn btn-primary" ng-click="formAdd.$valid && addItem()">add item</button>
+							</div>
+						</div>
+						<hr>
+					</form>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="text-center text-uppercase">list</h1>
+					</div>
+					<div class="col-xs-4">
+						<h4 class="text-uppercase" ng-repeat="label in labels">X coordination: {{label}}</h4>
+					</div>
+					<div class="col-xs-4">
+						<h4 class="text-center text-uppercase" ng-repeat="y in data[0]">Y coordination: {{y}}</h4>
+					</div>
+					<div class="col-xs-4">
+						<!-- <h4 class="text-center text-uppercase" ng-repeat="y in data[1]"> {{y}}</h4> -->
+					</div>
+				</div>
+				<hr>
+
+				<h2>Total point: {{labels.length}}</h2>
+
+			</div>
+		</div>
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/angular.chartjs/1.0.3/angular-chart.min.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/controllers.js"></script>
+</body>
+</html>

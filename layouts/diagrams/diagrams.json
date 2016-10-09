@@ -1,0 +1,51 @@
+[
+	{
+		"label":"Monday",
+		"data": {
+			"x": 65,
+			"y": 28
+		}
+	},
+	{
+		"label":"Tuesday",
+		"data":{
+			"x": 59,
+			"y": 48
+		}
+	},
+	{
+		"label":"Wednesday",
+		"data": {
+			"x": 80,
+			"y": 40
+		}
+	},
+	{
+		"label":"Thursday",
+		"data": {
+			"x": 81,
+			"y": 19
+		}
+	},
+	{
+		"label":"Friday",
+		"data": {
+			"x": 56,
+			"y": 86
+		}
+	},
+	{
+		"label":"Saturday",
+		"data": {
+			"x": 55,
+			"y": 27
+		}
+	},
+	{
+		"label":"Sunday",
+		"data": {
+			"x": 40,
+			"y": 90
+		}
+	}
+]

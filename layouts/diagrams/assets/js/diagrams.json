@@ -1,0 +1,30 @@
+{
+	"monday":{
+		"x": 20,
+		"y": 30
+	},
+	"thursday":{
+		"x": 15,
+		"y": 35
+	},
+	"wednesday":{
+		"x": 10,
+		"y": 5
+	},
+	"thersday":{
+		"x": 23,
+		"y": 30
+	},
+	"friday":{
+		"x": 20,
+		"y": 15
+	},
+	"enotherday":{
+		"x": 10,
+		"y": 7
+	},
+	"thenenotherday":{
+		"x": 10,
+		"y": 7
+	},
+}
