@@ -1,11 +1,11 @@
 angular.module("myDiagramm", ["chart.js"])
 .controller("LineCtrl", function ($scope, $http) {
 
-  $scope.labels = [];
+  $scope.labels = ['Yura', 'Helga', 'Serg', 'Myke', 'Alex', 'Nyk', 'Arsen'];
   $scope.series = ['Series A', 'Series B'];
   $scope.data = [
-    [],
-    []
+    [25, 22, 33, 10, 30, 50, 60],
+    [10, 33, 80, 90, 100, 105, 120]
   ];
   $scope.regexp = /\d+/g;
   $scope.onClick = function (points, evt) {
@@ -23,13 +23,14 @@ angular.module("myDiagramm", ["chart.js"])
   //           'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
   //       }
   //     };
-  $http.get('http://testtask.callway.com.ua/api/chart')
-    .success(function(res) {
-      res.forEach(function(item) {
-        $scope.data[0].push(item.X);
-        $scope.labels.push(item.Y);
-      })
-    });
+  // $http.get('http://testtask.callway.com.ua/api/chart')
+  // $http.get('../../diagrams.json')
+  //   .success(function(res) {
+  //     res.forEach(function(item) {
+  //       $scope.data[0].push(item.X);
+  //       $scope.labels.push(item.Y);
+  //     })
+  //   });
 
   // $http.put('http://testtask.callway.com.ua/api/addItem', {'X':25, 'Y':11}, config)
   //   .success(function(res) {
