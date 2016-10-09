@@ -16,19 +16,13 @@ angular.module("myDiagramm", ["chart.js"])
   	$scope.showHide = !$scope.showHide;
   };
 
+
   // var config = {
-  //    header: {
-  //      'Authorization': 'Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==',
-  //      'Access-Control-Allow-Origin': '*',
-  //      'Content-Type': 'application/json'
-  //      }
-  // };
-  var config = {
-        headers : {
-            'Access-Control-Allow-Origin': '*',
-            'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
-        }
-      };
+  //       headers : {
+  //           'Access-Control-Allow-Origin': '*',
+  //           'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
+  //       }
+  //     };
   $http.get('http://testtask.callway.com.ua/api/chart')
     .success(function(res) {
       res.forEach(function(item) {
@@ -50,14 +44,14 @@ angular.module("myDiagramm", ["chart.js"])
     $scope.data[0].push($scope.coordX),
     $scope.labels.push($scope.newLabel);
 
-  var data = {
-     "Value": "sample string 1"
-  };
-    $http.put('http://testtask.callway.com.ua/api/addItem', data, config).success(function(data, status, headers, config) {
-      // console.log(res);
-    }).error(function(data, status, headers, config) {
-      alert( "failure message: " + JSON.stringify({data: data}));
-    });
+  // var data = {
+  //    "Value": "sample string 1"
+  // };
+  //   $http.put('http://testtask.callway.com.ua/api/addItem', data, config).success(function(data, status, headers, config) {
+  //     // console.log(res);
+  //   }).error(function(data, status, headers, config) {
+  //     alert( "failure message: " + JSON.stringify({data: data}));
+  //   });
     $scope.coordX = '',
     $scope.newLabel = ''
   };
