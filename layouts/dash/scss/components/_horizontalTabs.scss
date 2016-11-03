@@ -1,0 +1,50 @@
+.horizotal--tabs {
+	background: #f1f1f1;
+}
+
+.horizotal--tabs .horizontal-tabs_item {
+	position: relative;
+	height: $circle-height * 2;
+	line-height: $circle-height;
+	font-size: $global-font-size * 1.25;
+	padding-left: 90px;
+	padding-right: 71px;
+	color: $black;
+	border-right: 1px solid #ccc;
+}
+
+.horizontal-tabs_item .icon:before {
+	top: -35px;
+}
+
+.tabs-title>a[aria-selected='true'] {
+	background: #fff;
+}
+
+.horizontal-tabs_item:hover {
+	background: #f1f1f1;
+}
+
+.horizontal-tabs_item  {
+	background: #f8f8f8;
+}
+
+.-time + span {
+	background: $dark-gray + 40%;
+}
+
+.horizotal--tabs span {
+	top: 15px;
+	right: 35px;
+}
+
+.tabs-title:last-of-type {
+	float: right;
+}
+
+.tabs-title:last-of-type .horizontal-tabs_item {
+	color: #ccc;
+	background: #f1f1f1;
+	text-align: right;
+	border-right: none;
+}

@@ -1,0 +1,103 @@
+.icon {
+  font-family: $global-font-icon;
+  position: absolute;
+    &:before {
+      font-size: $global-font-size * 3.2;
+      position: absolute;
+      top: -60px;
+      left: -50px;
+      color: $global-color_disselect;
+      transition: all .2s;
+    }
+    &:hover:before {
+    color: $global-color_red;
+}
+  &.-arrow {
+    &:before {
+      content: $icon-arrow;
+      font-size: 20px;
+      color: $white;
+    }
+  }
+  &.-atom {
+    &:before {
+      content: $icon-atom;
+    }
+  }
+  &.-chats {
+    &:before {
+      content: $icon-chats;
+    }
+  }
+  &.-check {
+    &:before {
+      content: $icon-checking;
+    }
+  }
+  &.-dashboard {
+    &:before {
+      content: $icon-dashboard;
+    }
+  }
+  &.-menu {
+    &:before {
+      content: $icon-menu;
+    }
+  }
+  &.-off {
+    &:before {
+      content: $icon-off;
+    }
+  }
+  &.-plain {
+    &:before {
+      content: $icon-plain;
+      font-size: 30px;
+      color: $color-tabs-horizontal;
+    }
+  }
+  &.-plus {
+    &:before {
+      content: $icon-plus;
+      color: $white;
+    }
+  }
+  &.-points {
+    &:before {
+      content: $icon-points;
+    }
+    &:hover:before {
+      color: $global-color_disselect;
+    }
+  }
+  &.-reload {
+    &:before {
+      content: $icon-reload;
+      font-size: 20px;
+      color: $white;
+    }
+  }
+  &.-reload2 {
+    &:before {
+      content: $icon-reload2;
+    }
+  }
+  &.-sheeel {
+    &:before {
+      content: $icon-sheeel;
+    }
+  }
+  &.-time {
+    &:before {
+      content: $icon-time;
+      font-size: 40px;
+      color: $color-tabs-horizontal;
+      left: -60px;
+    }
+  }
+  &.-zoom {
+    &:before {
+      content: $icon-zoom;
+    }
+  }
+}

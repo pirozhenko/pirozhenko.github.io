@@ -1,0 +1,80 @@
+.tabs-panel_header {
+	background: #f1f1f1;
+	padding: 30px 45px 10px 20px;
+}
+
+select {
+	padding-left: 55px;
+	padding-right: 35px;
+	border-radius: $global-border-radiusSpan;
+	background-image: none;
+	background-color: transparent;
+	z-index: 10;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 12px;
+	position: relative;
+	cursor: pointer;
+}
+
+.select--tabs {
+	position: relative;
+}
+
+.select--tabs:before {
+	content: $icon-arrow;
+	font-family: $global-font-icon;
+	position: absolute;
+	display: block;
+	top: 7px;
+	right: 15px;
+	color: #ccc;
+	font-size: 16px;
+}
+
+.select--tabs:after {
+	content: $icon-chats;
+	font-family: $global-font-icon;
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 15px;
+	color: #ccc;
+	font-size: 30px;
+	z-index: 0;
+}
+
+.tabs-panel_title {
+	position: relative;
+	display: inline-block;
+	color: $black;
+	border: 1px solid $light-gray;
+	height: $circle-height;
+	line-height: $circle-height;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: $global-border-radiusSpan;
+	margin-left: 55px;
+}
+
+.tabs-panel_reload:before,
+.select-tabs_arrow:before {
+	top: 0;
+	left: 25%;
+}
+
+.tabs-panel_reload,
+.select-tabs_arrow {
+	position: absolute;
+	top: 0;
+	left: -50px;
+	width: $circle-height;
+	height: $circle-height;
+	line-height: $circle-height;
+	border-radius: $global-border-radiusSpan;
+}
+
+.color--green {
+	background: #aacc4e;
+}
+
