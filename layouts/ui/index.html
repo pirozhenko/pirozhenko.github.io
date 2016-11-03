@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ui-kit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn"t work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <div class="container">
+        <div class="header">
+          <div class="header-gradient"></div>
+          <div class="header-nav clearfix">
+            <ul class="header-nav-bar pull-left">
+              <li class="nav-bar-items">
+                <a href="#" class="items">Home</a>
+              </li>
+
+              <li class="nav-bar-items">
+                <a href="#" class="items">Portfolio</a>
+              </li>
+
+              <li class="nav-bar-items">
+                <a href="#" class="items">About</a>
+              </li>
+
+              <li class="nav-bar-items">
+                <a href="#" class="items">Blog</a>
+              </li>
+
+              <li class="nav-bar-items">
+                <a href="#" class="items">Contact</a>
+              </li>
+
+            </ul>
+
+            <div class="header-search pull-left">
+
+              <label for="search" class="icon -search">
+                <input type="text" id="search" placeholder="Search...">
+              </label>
+
+            </div>
+            <div class="header-icons">
+
+              <div class="header-icons-block">
+                  <span class="icon -bell"></span>
+                  <span class="header-icon">4</span>
+              </div>
+
+              <div class="header-icons-block">
+                <span class="icon -msg"></span>
+                  <span class="header-icon">14</span>
+              </div>
+
+
+              <div class="header-icon-logo"></div>
+            </div>
+          </div><!-- end header -->
+        </div>
+
+        <div class="content clearfix"> <!-- content -->
+
+          <div class="content-navigation clearfix"> <!-- navigation -->
+            <div class="content-switch pull-left">
+              <div class="switch-round inline-block">
+                <label class="switch">
+                  <input type="checkbox">
+                  <div class="slider round">
+                    <span class="switch-on">on</span>
+                    <span class="switch-off">off</span>
+                  </div>
+                </label>
+
+                <label class="switch">
+                  <input type="checkbox" checked="checked">
+                  <div class="slider round">
+                    <span class="switch-on">on</span>
+                    <span class="switch-off">off</span>
+                  </div>
+                </label>
+              </div>
+
+              <div class="switch-square inline-block">
+                <label class="switch">
+                  <input type="checkbox">
+                  <div class="slider"></div>
+                </label>
+
+                <label class="switch">
+                  <input type="checkbox" checked="checked">
+                  <div class="slider"></div>
+                </label>
+              </div>
+            </div>
+
+            <div class="content-checkradio pull-left">
+              <div class="checkbox-inputs">
+                <label class="disabled" for="">Default
+                  <input type="checkbox">
+                  <span class="style-container"></span>
+                </label>
+
+                <label class="hover" for="">Hover
+                  <input type="checkbox">
+                  <span class="style-container"></span>
+                </label>
+
+                <label class="selected" >Selected
+                  <input type="checkbox" checked="checked">
+                  <span class="style-container"></span>
+                </label>
+              </div>
+
+              <div class="radio-inputs">
+                <label class="disabled" for="">Default
+                  <input type="checkbox">
+                  <span class="style-container"></span>
+                </label>
+
+                <label class="hover" for="">Hover
+                  <input type="checkbox">
+                  <span class="style-container"></span>
+                </label>
+
+                <label class="selected">Selected
+                  <input type="checkbox" checked="checked">
+                  <span class="style-container"></span>
+                </label>
+              </div>
+            </div><!-- end checkradio -->
+
+            <div class="content-diagramm pull-left">
+              <div class="content-round-progressbar pull-left">
+                <div class="progressbar">
+                  <span class="progressbar-number">75%</span>
+                </div>
+              </div>
+
+              <div class="content-round-diagram pull-left">
+                <div class="chart"></div>
+              </div>
+            </div><!-- end diagrams -->
+          </div> <!-- end navigation -->
+
+          <div class="section-left-sidebar pull-left">
+            <div class="section-form">
+              <div class="form-header">sign in</div>
+            
+              <form action="" class="form-container clearfix">
+
+                <input type="text" id="login" placeholder="Login">
+                <label for="login" class="form-label icon -user"></label>
+            
+                <input type="password" id="password" placeholder="Password">
+                <label for="password" class="form-label icon -lock"></label>
+            
+                <input type="submit" class="btn pull-right" value="log in">
+              </form>
+            </div>
+          
+          
+            <div class="selected-item">
+              <input type="checkbox">
+              <label>Select Something</label>
+          
+              <section>
+                <div class="selection">
+                  <input type="radio" name="radio">
+                  <label>First Option</label>
+                </div>
+                <div class="selection">
+                  <input type="radio" name="radio">
+                  <label>Another Option</label>
+                </div>
+                <div class="selection">
+                  <input type="radio" name="radio">
+                  <label>OK, that"s enough</label>
+                </div>
+              </section>
+            </div>
+          
+            <div class="selected-item">
+              <input type="checkbox" checked="checked">
+              <label>Select Something</label>
+          
+              <section>
+                <div class="selection">
+                  <input type="radio" name="radio">
+                  <label>First Option</label>
+                </div>
+                <div class="selection">
+                  <input type="radio" name="radio">
+                  <label>Another Option</label>
+                </div>
+                <div class="selection">
+                  <input type="radio" name="radio">
+                  <label>OK, that"s enough</label>
+                </div>
+              </section>
+            </div>
+          </div><!-- end section left -->
+
+        <div class="section-middle pull-left">
+          <div class="section-calendar">
+            <div class="month">
+              <ul>
+                <li class="prev pull-left">&#8656;</li>
+                <li class="next pull-right">&#8658;</li>
+                <li class="month-year">october 2014</li>
+              </ul>
+            </div>
+          
+            <ul class="weekdays">
+              <li>Su</li>
+              <li>Mo</li>
+              <li>Tu</li>
+              <li>We</li>
+              <li>Th</li>
+              <li>Fr</li>
+              <li>Sa</li>
+            </ul>
+          
+            <ul class="days clearfix"> 
+              <li></li>
+              <li></li>
+              <li></li>
+              <li>1</li>
+              <li >2</li>
+              <li >3</li>
+              <li >4</li>
+              <li >5</li>
+              <li >6</li>
+              <li >7</li>
+              <li >8</li>
+              <li >9</li>
+              <li >10</li>
+              <li >11</li>
+              <li >12</li>
+              <li >13</li>
+              <li >14</li>
+              <li class="active start">15</li>
+              <li class="active-inside">16</li>
+              <li class="active-inside">17</li>
+              <li class="active-inside">18</li>
+              <li class="active-inside">19</li>
+              <li class="active-inside">20</li>
+              <li class="active-inside">21</li>
+              <li class="active-inside">22</li>
+              <li class="active-inside">23</li>
+              <li class="active-inside">24</li>
+              <li class="active-inside">25</li>
+              <li class="active-inside">26</li>
+              <li class="active-inside">27</li>
+              <li class="active-inside">28</li>
+              <li class="active-inside">29</li>
+              <li class="active-inside">30</li>
+              <li class="active end">31</li>
+              <li></li>
+            </ul>
+          </div><!-- end calendar -->
+
+          <div class="person clearfix">
+            <figure class="clearfix">
+              <img src="img/emma.png" class="round-image" alt="girl">
+              <figcaption class="pull-right"><h1>emma stone</h1><p>the amazing spider-man,</p><p> gangster squad,</p> <p>the croods</p></figcaption>
+            </figure>
+            <div class="person-social icon -like likes pull-left"><span></span>172</div>
+            <div class="person-social icon -users users pull-left"><span></span>34</div>
+            <div class="person-social icon -eye watch pull-left"><span></span>210</div>
+          </div>
+        </div><!-- end section-middle -->
+
+        <div class="section-right-sedebar pull-left">
+          <div class="section-range">
+            <div class="range range-1">
+              <input type="range" id="range1" value="30" oninput="range1()">
+              <div class="range1-value">30</div>
+            </div>
+          
+            <div class="range range-2">
+              <input type="range" id="range2" multiple min="0" step="1" max="100" value="12,75" oninput="range2()">
+              <div id="input-value2" class="input-value"></div>
+              <span>0</span>
+              <span>25</span>
+              <span>50</span>
+              <span>75</span>
+              <span class="last">100</span>
+            </div>
+          
+            <div class="range range-3 clearfix">
+              <input type="range" id="range3" min="0" value="85" oninput="range3()">
+              <span>0%</span>
+              <span class="pull-right">100%</span>
+              <div id="input-value3" class="input-value"></div>
+            </div>
+          </div><!-- end section range -->
+
+          <div class="section-video">
+            <iframe src="https://www.youtube.com/embed/u5KQQWlIgGc" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div><!-- end section right -->
+
+      </div><!-- end container -->
+
+  <script src="js/main.js"></script>
+  </body>
+</html>
